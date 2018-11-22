@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.dg.model.EdgeModel" table="EDGES">
+        <id name ="routeId" type="integer" column="ROUTE_ID">
+            <generator class="native"/>
+        </id>
+        <many-to-one name="source" column="SOURCE" lazy="false" not-null="true" />
+        <many-to-one name="destination" column="DESTINATION" lazy="false" not-null="true"/>
+        <property name="distance" column="DISTANCE" type="float" not-null="true"/>
+    </class>
+</hibernate-mapping>

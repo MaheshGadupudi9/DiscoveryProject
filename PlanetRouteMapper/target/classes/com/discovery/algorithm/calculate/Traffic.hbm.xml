@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 01 Jun 2015 12:26:54 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="com.discovery.algorithm.calculate.Traffic" table="TRAFFIC" schema="APP" optimistic-lock="version">
+        <id name="routeid" type="long">
+            <column name="ROUTEID" precision="10" scale="0" />
+            <generator class="assigned" />
+        </id>
+        <property name="planetorigin" type="string">
+            <column name="PLANETORIGIN" length="100" />
+        </property>
+        <property name="planetdestination" type="string">
+            <column name="PLANETDESTINATION" length="100" />
+        </property>
+        <property name="traficdelay" type="big_decimal">
+            <column name="TRAFICDELAY" precision="5" />
+        </property>
+    </class>
+</hibernate-mapping>
