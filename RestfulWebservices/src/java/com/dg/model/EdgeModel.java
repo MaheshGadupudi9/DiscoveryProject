@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 /**
  *
- * @author bsganesh
+ * @author Mahesh
  */
 public class EdgeModel implements Serializable{
     
